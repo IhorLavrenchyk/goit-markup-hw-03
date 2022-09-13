@@ -42,6 +42,8 @@ body {
 
 .container {
   width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0px 15px;
 }
 a {
@@ -56,11 +58,13 @@ a {
   list-style: none;
 }
 /* header */
-
+header{
+  border-bottom: 1px solid #ececec;
+}
 .header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
+  
 }
 .hero {
   background-color: var(--background-color);
@@ -95,6 +99,7 @@ a {
 
 .header-link {
   color: var(--color-text);
+  padding: 5px;
   font-weight: 500;
   letter-spacing: 0.02em;
 }
@@ -141,11 +146,15 @@ a {
   cursor: pointer;
   padding: 10px 32px;
   border: none;
+  border-radius: 4px;
 }
 
 /* Секція  Список рішень*/
+.sections {
+  padding: 94px 0;
+}
 .hidden {
-  padding-top: 94px;
+  padding-bottom:0;
 }
 .vissual-hidden {
   position: absolute;
@@ -183,9 +192,7 @@ a {
 }
 
 /*Секція чим займаємось*/
-.retreat {
-  padding: 94px 0;
-}
+
 
 .occupation {
   display: flex;
@@ -273,6 +280,10 @@ a {
 .footer-contact {
   line-height: 24px;
   color: rgba(255, 255, 255, 0.6);
+
+}
+li.tel-phon{
+  margin-bottom: 0;
 }
 address {
   font-style: normal;
@@ -293,11 +304,16 @@ address {
   margin: 0 auto;
   border: none;
   border-radius: 4px;
+  padding: 6px 22px;
 }
+.portfolio-tack.first{
+  padding: 6px 25px;
+} 
 
 .btn-set {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .btn-item:not(:first-child) {
@@ -330,10 +346,6 @@ address {
   font-size: 16px;
   line-height: 1.9;
   color: var(--color-p);
-}
-
-.full-card-set {
-  margin-top: 50px;
 }
 
 .card-set {
