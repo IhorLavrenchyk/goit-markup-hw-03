@@ -120,6 +120,22 @@ header{
 }
 
 /* Головний контент */
+.hero{
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image:
+   linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ),
+  url(../images/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+
 .hero-title {
   color: var(--color-white);
   font-weight: 900;
@@ -178,7 +194,8 @@ header{
   line-height: 1.1;
   font-size: 14px;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin: 30px 0 10px 0;
+  
 }
 
 .list-item {
@@ -190,6 +207,19 @@ header{
 .hidden-clause:not(:first-child) {
   margin-left: 30px;
 }
+
+.icon-antenna{
+  background-color: var(--background-team)
+  
+}
+
+/* .hidden-clause::before{
+  display: block;
+  content:"";
+  height: 120px;
+  background-color:var(--background-team) ;
+  background-image: url(../images/symbol-defs.svg#antenna)
+} */
 
 /*Секція чим займаємось*/
 
